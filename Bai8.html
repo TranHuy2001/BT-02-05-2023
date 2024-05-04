@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bài 8: Viết hàm nhận vào 1 mảng, trả TBC các số > 10. (Phải dùng các hàm đã tạo ở bài 6 và 7)</p>
+</body>
+<script>
+    let arr = [15, 9, 20, 5, 13];
+
+    let sum = 0;
+    let count = 0;
+
+
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i] > 10) {
+            sum += arr[i];
+            count++;
+        }
+    }
+
+    let average = count > 0 ? sum / count : 0;
+
+    alert("Trung bình cộng các số lớn hơn 10 trong mảng là:" + average);
+</script>
+</html>

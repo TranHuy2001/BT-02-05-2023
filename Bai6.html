@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bài 6: Viết hàm nhận vào 1 mảng, trả về tổng các số > 10</p>
+</body>
+<script>
+    let arr = [15, 9, 20, 5, 13]; // Mảng được đưa vào
+    let total = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i] > 10) {
+            total += arr[i];
+        }
+    }
+    alert(`Tổng các số >10 trong mảng là ${total}.`);
+</script>
+</html>

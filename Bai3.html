@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bài 3: Viết hàm trả về giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</p>
+
+<p>Nhập số dùng để tính giai thừa</p>
+<input type="number" id="number">
+<button onclick="getData()">Xem</button>
+<p id="kq"></p>
+</body>
+<script>
+    function getData() {
+        let number = document.getElementById("number").value; // Số dùng để tính giai thừa
+        let factorial = 1;
+
+        for(let i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+
+        document.getElementById("kq").innerHTML = `Giai thừa của ${number} là ${factorial}.`;
+    }
+
+</script>
+</html>

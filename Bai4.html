@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Bài 4: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về tổng 3 số.</p>
+<p>Nhập số nguyên thứ nhất</p>
+<input type="number" id="num1">
+<p>Nhập số nguyên thứ hai</p>
+<input type="number" id="num2">
+<p>Nhập số nguyên thứ ba</p>
+<input type="number" id="num3">
+<button onclick="getData()">Xem</button>
+<p id="kq"></p>
+</body>
+<script>
+    // let num1 = 5, num2 = 10, num3 = 15; // Các số nguyên được đưa vào
+    // let sum = num1 + num2 + num3;   // Tính tổng
+    // console.log(`Tổng của 3 số là: ${sum}`); // Xuất ra tổng
+    function getData() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let num3 = document.getElementById("num3").value;
+
+        let sum = num1 + num2 + num3;
+
+        document.getElementById("kq").innerHTML = "Tổng của 3 số là: " + sum
+    }
+</script>
+</html>
